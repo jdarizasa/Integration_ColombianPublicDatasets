@@ -1,22 +1,38 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:resolute"
+	"name": "Santander Food Systems",
+	"image": "mcr.microsoft.com/devcontainers/base:resolute",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+    	"ghcr.io/devcontainers/features/python:1": {
+      		"version": "3.12",
+      		"installJupyterlab": true
+    	},
+    	"ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
+      		"version": "4.4",
+      		"installRMarkdown": true
+    	}
+  	},
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"customizations": {
+    	"vscode": {
+      		"extensions": [
+        		"ms-python.python",
+        		"ms-python.vscode-pylance",
+        		"ms-toolsai.jupyter",
+        		"reditorsupport.r",
+        		"ikuyadeu.r-lsp",
+		        "ms-vscode.makefile-tools"
+      		],
+      		"settings": {
+        		"python.defaultInterpreterPath": "/usr/local/python/current/bin/python",
+        		"editor.formatOnSave": true
+      			}
+    		}
+  		},
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "pip install pandas geopandas duckdb scikit-learn matplotlib seaborn requests sodapy && R -q -e 'install.packages(c(\"tidyverse\", \"sf\", \"duckdb\"), repos=\"https://cloud.r-project.org\")'",
 
-	// Configure tool-specific properties.
-	// "customizations": {},
+	"forwardPorts": [8888],
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"remoteUser": "vscode"
 }
