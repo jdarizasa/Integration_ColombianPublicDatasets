@@ -5,7 +5,7 @@
 - Find source of information
 
 ## Week 2
-- Find documentation to connect Datos Abiertos Colombia through an API: https://dev.socrata.com/blog/2016/02/01/pandas-and-jupyter-notebook and on generation app tokens: https://support.socrata.com/hc/en-us/articles/210138558-Generating-App-Tokens-and-API-Keys
+- Find documentation to connect Datos Abiertos Colombia [through an API](https://dev.socrata.com/blog/2016/02/01/pandas-and-jupyter-notebook) and on [generation app tokens](https://support.socrata.com/hc/en-us/articles/210138558-Generating-App-Tokens-and-API-Keys).
 - From Datos Abiertos Colombia obtain the following list of public datasets:
   * [Evaluaciones Agropecuarias Municipales EVA](https://www.datos.gov.co/Agricultura-y-Desarrollo-Rural/Evaluaciones-Agropecuarias-Municipales-EVA/2pnw-mmge/about_data) 
   * [Riego](https://www.datos.gov.co/Agricultura-y-Desarrollo-Rural/Distritos-de-Riego-activos/rtxu-twjm/about_data)
@@ -15,4 +15,4 @@
   * [Mapa Inversiones DNP](https://www.datos.gov.co/Econom-a-y-Finanzas/DNP-SeguimientoProyecto/7mxf-bp6x/about_data)
   * [Red de Seguridad Alimentaria](https://www.datos.gov.co/Inclusi-n-Social-y-Reconciliaci-n/Beneficiarios-Red-de-Seguridad-Alimentaria-ReSA/5m78-fkmq/about_data)
   * [Indice de Pobreza Multidimensional - IPM- 2025](https://www.datos.gov.co/dataset/Indice-de-Pobreza-Multidimensional-IPM-2025/vjih-49w8/about_data): This one has no API so special treatment is required
-  * [Encuesta Nacional de Calidad de Vida - ECV - 2025](https://www.datos.gov.co/dataset/Encuesta-Nacional-de-Calidad-de-Vida-ECV-2025/q7pm-4a7m/about_data): : This one has no API so special treatment is required
+  * [Encuesta Nacional de Calidad de Vida - ECV - 2025](https://www.datos.gov.co/dataset/Encuesta-Nacional-de-Calidad-de-Vida-ECV-2025/q7pm-4a7m/about_data): This one has no API so special treatment is required
